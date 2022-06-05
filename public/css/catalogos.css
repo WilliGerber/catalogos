@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+:root {
+    --title-color: #d0a81e;
+    --primary-color: #34cb79;
+    --light-color: #E8D693;
+    --light-gray: #f0f0f5;
+}
+
+.no-underline {
+    text-decoration: none !important;
+}
+
+body {
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--title-color);
+    font-size: 32px;
+}
+
+h2, h4, h5, h6 {
+    color: var(--title-color);
+    text-decoration: none;
+}
+
+h3 {
+    color: white;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+main {
+    margin-top: 44px;
+    margin-bottom: 40px;
+}
+
+
+
+#page-catalogos {
+    width: 90%;
+    max-width: 1100px;
+
+    /*alinhamento de caixa pelo lado de fora*/
+
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+main h4 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+
+main .categoria-cards {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+main .categoria-card {
+    background-color: var(--light-color);
+    /*border-style: solid;*/
+    /*border-color: var(--light-color);*/
+    height: 250px;
+    display: grid;
+    border-radius: 10px;
+    box-shadow: 1px 4px 14px rgba(3, 74, 40, 0.3);
+    text-align: center;
+}
+
+main .categoria-card .img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 3px 3px 0 0;
+    height: 210px;
+}
+
+main .categoria-card img{
+    width: 96%;
+    height: 96%;
+    background-color: white;
+    object-fit: cover;
+    border-radius: 3px 3px 0 0;
+
+}
+
+main .catalogo-cards {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+main .catalogo-card {
+    background-color: var(--light-color);
+    /*border-style: solid;*/
+    /*border-color: var(--light-color);*/
+    height: 250px;
+    display: grid;
+    border-radius: 10px;
+    box-shadow: 1px 4px 14px rgba(3, 74, 40, 0.3);
+}
+
+main .catalogo-card .img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 3px 3px 0 0;
+    height: 190px;
+}
+
+main .catalogo-card img{
+    width: 96%;
+    height: 96%;
+    background-color: white;
+    object-fit: cover;
+    border-radius: 3px 3px 0 0;
+}
+
+main .catalogo-card h2 {
+    margin: 8px 8px 0 8px;
+    color: white;
+
+    font-size: 24px;
+    text-decoration: none;
+}
+
+main .catalogo-card h3 {
+    margin: 0 8px 0 8px;
+    text-align: center;
+
+    font-size: 12px;
+    line-height: 16px;
+
+    color: gray;
+    text-decoration: none;
+}
+
+main .catalogo-card p {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #6c6c80;
+}
+
+main .catalogo-card h4 {
+    display: none;
+}
+
+main .catalogo-card:hover {
+    background-color: var(--primary-color);
+    opacity: 1;
+    transition: 250ms;
+    text-decoration: none;
+}
+
+main .catalogo-card:hover .texto {
+    align-items: center;
+    text-align: center;
+    justfy-content: center;
+}
+
+main .catalogo-card:hover h2 {
+    color: var(--primary-color);
+    transition: 250ms;
+}
+
+main .catalogo-card:hover h4 {
+    display: block;
+    text-align: center;
+}
+
+main .catalogo-card:hover img {
+    opacity: 0.4;
+    transition: 250ms;
+    text-decoration: none;
+}
+
+main .catalogo-card:hover .texto {
+    display: none;
+    max-height: 50px;
+}
+
+/* .add-new-catalogo {
+    background-color: var(--light-color);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+}
+
+.add-new-catalogo img{
+    height: 200px;    
+    margin-top: 14px;
+}
+
+.add-new-catalogo h3 {
+    color: white;
+    margin-bottom: 24px;
+}
+
+.add-new-catalogo:hover{
+    background-color: var(--title-color);
+    transition: 250ms;
+} */
+
+
+/* body::after {*/
+/*    content: "";*/
+/*    position: fixed;*/
+/*    background: var(--light-gray);*/
+/*    top: 500px;*/
+/*    right: 0;*/
+/*    left: 0px;*/
+/*    bottom: 0;*/
+/*    z-index: -1;*/
+/*} */
